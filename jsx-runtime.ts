@@ -234,14 +234,10 @@ export namespace JSX {
     'priority': util.SkruvPrioritySitemapAttributes
     'sitemapindex': util.SkruvSitemapindexSitemapAttributes
     'sitemap': util.SkruvSitemapSitemapAttributes
-    'skruvHeader': util.AsyncContent<{
-      'name': string | number
-      'value': string
-      isSkruvDom?: false
-    }>
-    'skruvComment': util.AsyncContent<{ isSkruvDom?: false }>
-    'skruvText': util.AsyncContent<{ isSkruvDom?: false }>
-    [elemName: string]: any
+    'skruvHeader': util.SkruvHeaderAttributes
+    'skruvComment': util.SkruvTextAttributes
+    'skruvText': util.SkruvTextAttributes
+    [elemName: string]: any;
   }
 }
 
